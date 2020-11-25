@@ -1,8 +1,4 @@
-all:list Josephus 
-list:test.c
-	gcc test.c -o list
-Josephus:testJosephus.c
-	gcc testJosephus.c -o Josephus
+sort:test.c
+	gcc test.c -o sort
 clean:
-	rm list
-	rm Josephus
+	rm sort
