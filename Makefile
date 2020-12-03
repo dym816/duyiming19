@@ -14,3 +14,11 @@ sort:sort.c test.c
 clean:
 	rm sort
 	
+	
+all:linkstack
+linkstack:linkstack.c testlinkstack.c
+	g++ linkstack.c testlinkstack.c -o linkstack
+clean:
+	rm linkstack
+
+	
