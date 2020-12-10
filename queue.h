@@ -29,35 +29,6 @@ int size(LinkQueue* q);
 
 
 
-typedef struct Dnode 
-{
-    dataType data;
-    struct Dnode *left;
-    struct Dnode *right;
-}dq;
-
-typedef struct dequeue
-{
-    Dnode *front;
-    Dnode *rear;
-    int size;
-}Deque;
-
-
-
-
-Deque* createDeque();
-int size(Deque *dq);
-int empty(Deque *dq);
-dataType front(Deque *dq);
-void push_front(Deque *dq, dataType x);
-void push_back(Deque *dq, dataType x);
-void pop_front(Deque *dq);
-void pop_back(Deque *dq);
-void clear(Deque *dq);
-void print(Deque *dq)
-
-
 
 
 #endif
