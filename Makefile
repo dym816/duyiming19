@@ -20,5 +20,15 @@ linkstack:linkstack.c testlinkstack.c
 	g++ linkstack.c testlinkstack.c -o linkstack
 clean:
 	rm linkstack
+	
+all:queue dequeue
+queue:queue.c testqueue.c
+	gcc queue.c testqueue.c -o queue
+dequeue:dequeue.c testqueue.c
+	g++ dequeue.c testdequeue.c -o dequeue
+	
+clean:
+	rm queue
+	rm dequeue
 
 	
