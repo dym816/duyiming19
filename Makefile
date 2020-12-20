@@ -30,5 +30,13 @@ dequeue:dequeue.c testqueue.c
 clean:
 	rm queue
 	rm dequeue
+	
+	
+all:search
+search:search.c testsearch.c
+	g++ search.c testsearch.c -o search
+clean:
+	rm search
+
 
 	
